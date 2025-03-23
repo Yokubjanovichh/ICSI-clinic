@@ -145,7 +145,7 @@ body {
 .icsiClinicFirstPageImgWrapper2Right {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
 }
 
 .icsiClinicFirstPageImgWrapper2Right div {
@@ -156,7 +156,7 @@ body {
 
 .icsiClinicFirstPageImgWrapper2Right div p {
   color: #006880;
-  font-size: 28px;
+  font-size: 1.7em;
   line-height: 1.5;
 }
 
@@ -327,10 +327,10 @@ body {
 
 .icsiClinicSecondPageImgSection {
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 50px;
+  justify-content: center;
 }
 
 .icsiClinicSecondPageImgItem {
@@ -340,7 +340,7 @@ body {
 
 .icsiClinicSecondPageImgItem img {
   width: 100%;
-  height: 400px;
+  height: auto;
 }
 
 .icsiClinicSecondPageImgItem div {
@@ -421,7 +421,7 @@ body {
 .icsiClinicSecondPageBottomBigImageTable div:nth-child(1) p {
   width: max-content;
   font-size: 30px;
-  line-height: 1.5;
+  line-height: 1.9;
   color: #d5a796;
 }
 
@@ -784,6 +784,13 @@ body {
   .icsiClinicFirstPageImgWrapper3SectionTop {
     margin-left: calc(380 / 19.2 * 1vw);
   }
+
+  .icsiClinicSecondPageBottomBigImage img {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
 }
 
 @media only screen and (max-width: 1100px) {
@@ -870,5 +877,66 @@ body {
 
   .icsiClinicFirstPageImgWrapper2Left div > p {
     margin-left: 0;
+  }
+
+  .icsiClinicSecondPageImgSection {
+    grid-template-columns: 1fr;
+  }
+
+  .icsiClinicSecondPageImgItem div {
+    justify-content: center;
+  }
+
+  .icsiClinicSecondPageImgItem div p {
+    font-size: calc(16 / 5 * 1vw);
+  }
+
+  .mainTitle > p:nth-child(1) {
+    font-weight: 600;
+    font-size: 1.2em;
+  }
+
+  .icsiClinicFirstPageImgWrapper2Right {
+    gap: 10px;
+  }
+
+  .icsiClinicFirstPageImgWrapper2Right div p {
+    color: #006880;
+    font-size: 1.3em;
+    line-height: 1.5;
+  }
+
+  .icsiClinicSecondPageBottomBigImageTable {
+    padding-top: 30px;
+    align-items: center;
+  }
+
+  .icsiClinicSecondPageBottomBigImageTable div {
+    max-width: 100%;
+  }
+
+  .icsiClinicSecondPageBottomBigImageTable div:nth-child(1) {
+    gap: 5px;
+    justify-content: space-between;
+    border-bottom: 3px solid #d6a794;
+    align-items: flex-end;
+  }
+
+  .icsiClinicSecondPageBottomBigImageTable div:nth-child(1) p {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  .icsiClinicSecondPageBottomBigImageTable div {
+    gap: 0;
+    justify-content: space-between;
+    border-bottom: 3px solid #3a3b3b;
+  }
+
+  .icsiClinicSecondPageBottomBigImageTable div p {
+    width: max-content;
+    font-size: 17px;
+    line-height: 1.9;
+    color: #3a3b3b;
   }
 }
