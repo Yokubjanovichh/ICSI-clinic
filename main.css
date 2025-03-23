@@ -727,7 +727,7 @@ body {
 }
 .icsiClinicFourthPageHeader > img {
   max-width: 300px;
-  height: 250px;
+  height: auto;
 }
 
 .mainText2 {
@@ -896,6 +896,15 @@ body {
     max-width: max-content;
     width: 100%;
   }
+
+  .icsiClinicFourthPageHeader {
+    gap: 30px;
+  }
+
+  .icsiClinicFourthPageHeader > img {
+    max-width: 200px;
+    height: auto;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -955,7 +964,8 @@ body {
     font-size: calc(16 / 5 * 1vw);
   }
 
-  .mainTitle > p:nth-child(1) {
+  .mainTitle > p:nth-child(1),
+  .mainTitle2 {
     font-weight: 600;
     font-size: 1.2em;
   }
@@ -1052,6 +1062,16 @@ body {
     font-size: 16px;
     font-weight: 600;
     line-height: 1.5;
+  }
+
+  .icsiClinicFourthPageHeader {
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+
+  .icsiClinicFourthPageHeader > img {
+    max-width: 200px;
+    height: auto;
   }
 }
 
