@@ -11,6 +11,7 @@ body {
 .container {
   width: 100%;
   max-width: 1400px;
+  padding: 0 20px;
   margin: 0 auto;
 }
 
@@ -771,3 +772,103 @@ body {
   color: #3a3b3b;
 }
 
+/* media section */
+
+@media only screen and (max-width: 1400px) {
+  .icsiClinicFirstPageImgWrapper {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .icsiClinicFirstPageImgWrapper3SectionTop {
+    margin-left: calc(380 / 19.2 * 1vw);
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .icsiClinicFirstPageImgWrapper3SectionTop {
+    margin-left: 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .icsiClinicFirstPageImgWrapper3SectionTop div > img {
+    display: none;
+  }
+
+  .icsiClinicFirstPageImgWrapper3SectionBottom {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icsiClinicFirstPageImgWrapper3SectionFooter {
+    margin: 0;
+  }
+
+  .icsiClinicFirstPageImgWrapper3SectionRight > p {
+    text-align: center;
+  }
+
+  .icsiClinicFirstPageImgWrapper3SectionBottom > p {
+    text-align: center;
+  }
+
+  .icsiClinicFirstPageImgWrapper3SectionBottom > div {
+    flex-direction: column;
+  }
+
+  .icsiClinicFirstPageImgWrapper3SectionBottomLeft {
+    margin: 0;
+    height: max-content;
+  }
+
+  .icsiClinicFirstPageImgWrapper3SectionBottomLeft > img {
+    display: none;
+  }
+
+  .icsiClinicFirstPageImgWrapper3SectionBottomLeft p {
+    margin: 20px 0 0 0;
+    text-align: center;
+  }
+
+  .icsiClinicFirstPageImgWrapper3SectionBottomLeft p:nth-child(1) {
+    max-width: max-content;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .icsiClinicFirstPageImgWrapper2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icsiClinicFirstPageImgWrapper2Left div img {
+    max-width: 300px;
+    margin: 0 20px;
+  }
+
+  .icsiClinicFirstPageImgWrapper2Left {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .icsiClinicFirstPageImgWrapper2Left div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icsiClinicFirstPageImgWrapper2Left > p:nth-child(1) {
+    width: 100%;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .icsiClinicFirstPageImgWrapper2Left div > p {
+    margin-left: 0;
+  }
+}
