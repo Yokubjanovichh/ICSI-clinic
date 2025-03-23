@@ -537,7 +537,7 @@ body {
   width: 100%;
   display: flex;
   align-items: flex-end;
-  gap: 100px;
+  gap: 50px;
 }
 
 .bodySectionImageRow:nth-child(2) {
@@ -562,6 +562,15 @@ body {
   line-height: 1.5;
 }
 
+.bodySectionImageRowImages {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .bodySectionImageRowImages > img {
   max-width: 250px;
   height: auto;
@@ -569,12 +578,6 @@ body {
 
 .bodySectionImageRowImagesBig > img {
   max-width: 320px;
-  width: 100%;
-  height: auto;
-}
-
-.bodySectionImageRowImagesBig2 > img {
-  max-width: 350px;
   width: 100%;
   height: auto;
 }
@@ -775,6 +778,10 @@ body {
 /* media section */
 
 @media only screen and (max-width: 1400px) {
+  .icsiClinicFirstPageImg {
+    max-width: 300px;
+  }
+
   .icsiClinicFirstPageImgWrapper {
     gap: 20px;
     flex-wrap: wrap;
@@ -791,9 +798,30 @@ body {
     height: auto;
     margin-top: 20px;
   }
+
+  .bodySectionImageRow {
+    align-items: center;
+  }
+
+  .bodySectionImageRowImages > img {
+    max-width: 200px;
+    height: auto;
+  }
+
+  .bodySectionImageRowImagesBig > img {
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+  }
 }
 
 @media only screen and (max-width: 1100px) {
+  .icsiClinicFirstPageImg {
+    max-width: 250px;
+  }
+  .icsiClinicFirstPageImg p {
+    font-size: 16px;
+  }
   .icsiClinicFirstPageImgWrapper3SectionTop {
     margin-left: 0;
     justify-content: center;
@@ -844,9 +872,45 @@ body {
   .icsiClinicFirstPageImgWrapper3SectionBottomLeft p:nth-child(1) {
     max-width: max-content;
   }
+
+  .bodySectionImageRowImages > img {
+    max-width: 160px;
+    height: auto;
+  }
+
+  .bodySectionImageRowImagesBig > img {
+    max-width: 210px;
+    width: 100%;
+    height: auto;
+  }
+
+  .bodySectionImageContainer:nth-child(3) {
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+  }
+
+  .bodySectionImageContainerRight > p {
+    max-width: max-content;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .icsiClinicThirdPageHeaderSection div {
+    gap: calc(150 / 11 * 1vw);
+  }
 }
 
 @media only screen and (max-width: 700px) {
+  .icsiClinicFirstPageImg {
+    max-width: 170px;
+  }
+  .icsiClinicFirstPageImg p {
+    font-size: 15px;
+  }
   .icsiClinicFirstPageImgWrapper2 {
     flex-direction: column;
     justify-content: center;
@@ -938,5 +1002,97 @@ body {
     font-size: 17px;
     line-height: 1.9;
     color: #3a3b3b;
+  }
+
+  .bodySectionImageContainer {
+    gap: 50px;
+  }
+
+  .bodySectionImageRow {
+    flex-direction: column-reverse;
+    gap: 20px !important;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bodySectionImageRow > div:nth-child(2) > img {
+    display: none;
+  }
+
+  .bodySectionImageRowImages > img {
+    max-width: 120px;
+    height: auto;
+  }
+
+  .bodySectionImageRowImagesBig > img {
+    max-width: 150px;
+    width: 100%;
+    height: auto;
+  }
+
+  .bodySectionImageContainerLeft > img:nth-child(1) {
+    max-width: calc(500 / 7 * 1vw);
+    width: 100%;
+    height: auto;
+  }
+
+  .bodySectionImageContainerLeftBottom > img {
+    max-width: calc(400 / 7 * 1vw);
+  }
+
+  .bodySectionImageContainerLeftBottom > div > img {
+    max-width: calc(200 / 5 * 1vw);
+  }
+
+  .bodySectionImageContainerLeftBottom > div > p {
+    font-size: calc(16 / 7 * 1vw);
+  }
+
+  .icsiClinicThirdPageBodySectionText > div > p {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .icsiClinicFirstPageImg p {
+    font-size: 14px;
+  }
+  .bodySectionImageContainerRight > p {
+    font-size: 18px;
+    color: #3a3b3b;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  .icsiClinicThirdPageHeaderSection div {
+    gap: 10px;
+  }
+
+  .icsiClinicThirdPageHeaderSection div p {
+    font-size: 10px;
+  }
+
+  .bodySectionImageContainerRightBody > div > p:nth-child(1) {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #3a3b3b;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .bodySectionImageContainerRightBody > div > p {
+    font-size: 14px;
+  }
+
+  .bodySectionImageContainerRightBody > div > img {
+    max-width: 50px;
+  }
+
+  .icsiClinicThirdPageBodySectionText > div > p {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.3;
   }
 }
